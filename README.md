@@ -41,3 +41,34 @@ For Azure Artifacts, copy below section and paste to pom.xml as I have shown in 
 
 ![image](https://github.com/user-attachments/assets/d781918a-7baf-47da-be3e-a8b4a61b6da6)
 ![image](https://github.com/user-attachments/assets/7b734dd6-64ba-4171-81db-e8f1b4225ff5)
+
+Provide Contributor Access for Azure Artifacts as shown in screenshot below.
+
+![image](https://github.com/user-attachments/assets/a26ab93a-97a7-4115-89ec-5914c32a2c4f)
+![image](https://github.com/user-attachments/assets/37f58cac-8408-436e-b8fd-3a2d36fb4726)
+
+I have created configmap to import the tables into the database. This step was done in the Azure-Pipeline itself as shown in the screenshot below.
+![image](https://github.com/user-attachments/assets/c2c38d12-e45e-4029-a479-93b74ce786bd)
+![image](https://github.com/user-attachments/assets/d150fc5d-715f-408e-854f-895672a85ac8)
+
+I have created Service service Connection for SonarQube, Azure Artifacsts, Azure Container Registries and DockerHub Repository as shown below.
+
+![image](https://github.com/user-attachments/assets/98f98925-a52f-405a-8e90-4ef3ab39275a)
+![image](https://github.com/user-attachments/assets/7e58016c-336c-4fde-9cf3-d3170b1a28e1)
+
+Now Run the Azure Pipeline. Create the URL using ingress rule for service present in the file ingress-rule.yaml in this repository. Do the entry for this URL with Public IP in Record Set of Azure DNS Zone. Access the newly created URL and provide username admin_vp and password admin_vp.
+![image](https://github.com/user-attachments/assets/84aeb827-0ee4-4dfe-b10d-13e8f41f82d6)
+![image](https://github.com/user-attachments/assets/503afb7d-2988-43e1-8916-6b091820eac4)
+![image](https://github.com/user-attachments/assets/33773fbd-c200-4312-adee-b3ea1d6df737)
+![image](https://github.com/user-attachments/assets/972e6574-c8af-4a65-9323-2011908afb85)
+
+When you click on the User for the first time it will get the values from MySQL Database and store it in Memcache, so that next time when you click on the same user it will provide the values from the Memcache itself.
+
+![image](https://github.com/user-attachments/assets/646800cd-a606-405e-917d-a62054f40ffc)
+![image](https://github.com/user-attachments/assets/39ac9f0b-5aea-48f2-ab86-8dea34190d7d)
+
+After running the Azure Pipeline Screenshots for RabbitMQ, SonarQube, Azure Artifacts are as shown in the Screenshot below.
+![image](https://github.com/user-attachments/assets/6b5dabff-3883-47ff-9a31-19f6d02465ef)
+![image](https://github.com/user-attachments/assets/2f4b4e1e-273e-4755-8e8d-e31137480906)
+![image](https://github.com/user-attachments/assets/73b8f0d1-5716-43b3-9618-64802161c8f3)
+![image](https://github.com/user-attachments/assets/2571decc-fe04-4c04-9a70-958085e71484)
