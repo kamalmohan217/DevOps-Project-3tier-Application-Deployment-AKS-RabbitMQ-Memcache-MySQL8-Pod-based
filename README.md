@@ -72,3 +72,35 @@ After running the Azure Pipeline Screenshots for RabbitMQ, SonarQube, Azure Arti
 ![image](https://github.com/user-attachments/assets/2f4b4e1e-273e-4755-8e8d-e31137480906)
 ![image](https://github.com/user-attachments/assets/73b8f0d1-5716-43b3-9618-64802161c8f3)
 ![image](https://github.com/user-attachments/assets/2571decc-fe04-4c04-9a70-958085e71484)
+![image](https://github.com/user-attachments/assets/56ee1656-5acc-4d26-b1de-14bb67c3b0bf)
+
+```
+Create secret in Kubernetes for DockerHub Repository access
+
+kubectl create secret docker-registry dockerhub-auth --docker-server=docker.io --docker-username=XXXXXXXXX --docker-password=XXXXXXXXX -n mysql
+```
+
+```
+Create secret in Kubernetes for Azure Container Registries access
+
+kubectl create secret docker-registry backend-auth --docker-server=https://akscontainer24registry.azurecr.io --docker-username=akscontainer24registry --docker-password=cXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXR -n backend
+```
+```
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+```
+Source Code:-  https://github.com/kamalmohan217/Three-tier-WebApplication.git
+```
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+```
+Reference:-  https://github.com/logicopslab/vprofile-project.git
+```
